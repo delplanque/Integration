@@ -1,12 +1,14 @@
 version: 2
 jobs:
  build:
+  docker:
+    - dockerfile: ./.circleci/Dockerfile
    machine: true
    steps:
      - checkout
 
      # build the application image
-     - run: docker build -t pagepersos ../
+     - run: docker build -t pagepersos .
 
      # deploy the image
      # - run: docker push pagepersos

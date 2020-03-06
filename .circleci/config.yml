@@ -1,8 +1,10 @@
 version: 2
+executors:
+  my-executor:
+    docker:
+      - dockerfile: ./.circleci/Dockerfile
 jobs:
  build:
-   docker:
-     - dockerfile: ./.circleci/Dockerfile
    steps:
      - checkout
      - run: docker build -t pagepersos .

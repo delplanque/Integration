@@ -1,6 +1,7 @@
 version: 2
 jobs:
  build:
+   machine: true
    environment:
      IMAGE_NAME: jordandelplanque/webserve
    docker:

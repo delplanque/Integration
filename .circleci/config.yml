@@ -8,8 +8,7 @@ jobs:
         ls 
         pwd
         docker login -u jordandelplanque -p ascasc0123
-        docker build -t jordandelplanque/webserve:latest -t  jordandelplanque/webserve:v0.2 .
+        docker build -t jordandelplanque/webserve:latest .
         docker push jordandelplanque/webserve:latest
-        docker push jordandelplanque/webserve:v0.2
     # deploy the image
     # - run: docker push pagepersos

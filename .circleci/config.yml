@@ -10,5 +10,6 @@ jobs:
         docker login -u jordandelplanque -p ascasc0123
         docker pull jordandelplanque/webserve:firsttry
         docker build -t jordandelplanque/webserve:firsttry .
+        docker push jordandelplanque/webserve:latest
     # deploy the image
     # - run: docker push pagepersos

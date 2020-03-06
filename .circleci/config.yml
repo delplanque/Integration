@@ -5,7 +5,6 @@ jobs:
      IMAGE_NAME: jordandelplanque/webserve
    docker:
      - image: jordandelplanque/webserve:firsttry
-   machine: true
    steps:
      - checkout
      - run: 

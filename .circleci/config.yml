@@ -7,6 +7,6 @@ jobs:
      - image: jordandelplanque/webserve:firsttry
    steps:
      - checkout
-     - run: docker build -t $IMAGE_NAME:firsttry .
+     - run: docker build -t jordandelplanque/webserve:firsttry .
      # deploy the image
      # - run: docker push pagepersos

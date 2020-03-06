@@ -5,9 +5,9 @@ jobs:
     IMAGE_NAME: jordandelplanque/webserve
   docker:
     - image: jordandelplanque/webserve:firsttry
-    - auth:
-      username: jordandelplanque
-      password: ascasc0123
+      auth:
+        username: jordandelplanque
+        password: ascasc0123
   steps:
     - checkout
     - run: docker build -t jordandelplanque/webserve:firsttry .

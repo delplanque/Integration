@@ -1,10 +1,12 @@
 version: 2
 jobs:
  build:
+   docker: 
+    - image: jordandelplanque/webserve:firsttry
    machine: true
    steps:
      - checkout
-     - run: docker pull jordandelplanque/webserve:firsttry
+     # - run: docker pull jordandelplanque/webserve:firsttry
      - run: docker build -t jordandelplanque/webserve:firsttry .
      # deploy the image
      # - run: docker push pagepersos

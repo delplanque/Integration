@@ -7,7 +7,6 @@ jobs:
     - run: |
         ls 
         pwd
-        ls project
         docker login -u jordandelplanque -p ascasc0123
         docker pull jordandelplanque/webserve:firsttry
         docker build -t jordandelplanque/webserve:firsttry .

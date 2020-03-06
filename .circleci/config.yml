@@ -1,15 +1,10 @@
 version: 2
 jobs:
  build:
-  environment:
-    IMAGE_NAME: jordandelplanque/webserve
-  docker:
-    - image: jordandelplanque/webserve:firsttry
-      auth:
-        username: jordandelplanque
-        password: ascasc0123
+  machine: true
   steps:
     - checkout
+    - run: docker login -u jordandelplanque -p ascasc0123
     - run: docker build -t jordandelplanque/webserve:firsttry .
     # deploy the image
     # - run: docker push pagepersos
